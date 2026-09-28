@@ -1,0 +1,177 @@
+/* ==========================================
+   CSS DASAR (Hasil Tahap Pertama)
+   ========================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #1f3c88;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #ffffff;
+    padding: 14px 20px;
+    border-bottom: 1px solid #cccccc;
+}
+
+nav a {
+    color: #1f3c88;
+    text-decoration: none;
+    margin-right: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #dddddd;
+}
+
+img {
+    border-radius: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+
+/* ==========================================
+   BLOK LAYOUT (AKTIFKAN HANYA SATU)
+   Layout A sedang AKTIF.
+   Untuk pindah layout: beri komentar pada blok
+   yang aktif, lalu buka komentar blok yang
+   ingin dicoba.
+   ========================================== */
+
+
+/* LAYOUT A - TOP LEFT */
+nav {
+    text-align: left;
+}
+
+nav a {
+    display: inline-block;
+}
+
+
+/* LAYOUT B - TOP CENTER
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+}
+*/
+
+
+/* LAYOUT C - TOP RIGHT
+nav {
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+}
+*/
+
+
+/* LAYOUT D - LEFT SIDEBAR
+body {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "header header"
+        "nav    main"
+        "footer footer";
+}
+
+header { grid-area: header; }
+nav    { grid-area: nav; }
+main   { grid-area: main; }
+footer { grid-area: footer; }
+
+nav {
+    text-align: left;
+    border-right: 1px solid #cccccc;
+    border-bottom: none;
+    min-height: 100%;
+}
+
+nav a {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+main {
+    width: auto;
+    max-width: none;
+    margin: 24px;
+}
+*/
+
+
+/* LAYOUT E - RIGHT SIDEBAR
+body {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    grid-template-areas:
+        "header header"
+        "main   nav"
+        "footer footer";
+}
+
+header { grid-area: header; }
+nav    { grid-area: nav; }
+main   { grid-area: main; }
+footer { grid-area: footer; }
+
+nav {
+    text-align: left;
+    border-left: 1px solid #cccccc;
+    border-bottom: none;
+    min-height: 100%;
+}
+
+nav a {
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+main {
+    width: auto;
+    max-width: none;
+    margin: 24px;
+}
+*/
