@@ -1,97 +1,114 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Saya</title>
+    <title>Biodata Amelia - Ocean Blue</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- DEKORASI LAUT -->
+    <div class="ocean-decorations">
+        <span class="fish fish-1">🐬</span>
+        <span class="fish fish-2">🐠</span>
+        <span class="fish fish-3">🐢</span>
+        <span class="fish fish-4">🪼</span>
+        <span class="fish fish-5">🐟</span>
+    </div>
+
+    <!-- GELEMBUNG AIR -->
+    <div class="bubbles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
     <!-- HEADER -->
     <header>
-        <h1>BIODATA SAYA</h1>
-        <p>Website Biodata Sederhana</p>
+        <h1>🌊 BIODATA SAYA 🌊</h1>
+        <p>Website Biodata</p>
         <p>Mata Kuliah Web Programming 1</p>
     </header>
 
-    <hr>
-
     <!-- NAVIGATION -->
-    <nav>
-        <a href="#biodata">Biodata</a> |
-        <a href="#tentang">Tentang Saya</a> |
-        <a href="#pendidikan">Pendidikan</a> |
-        <a href="#hobi">Hobi</a> |
-        <a href="#skill">Skill</a> |
-        <a href="#sosial-media">Social Media</a>
+    <nav id="main-navigation" class="top-nav">
+        <a href="index.html">🏠 Biodata</a>
+        <a href="layout.html">🌊 Layout Experiment</a>
+        <a href="#pendidikan">🎓 Pendidikan</a>
+        <a href="#hobi">🐠 Hobi</a>
+        <a href="data_mahasiswa.php">📋 Data Mahasiswa</a>
+        <a href="form_mahasiswa.php">➕ Tambah Mahasiswa</a>
     </nav>
-
-    <hr>
 
     <!-- MAIN CONTENT -->
     <main>
 
         <!-- BIODATA -->
-        <section id="biodata">
-            <h2>Data Pribadi</h2>
+        <section id="biodata" class="card">
+            <h2>🐬 Data Pribadi</h2>
 
-            <img src="foto.png" alt="Foto Profil Saya" width="150">
+            <div class="profile-header">
+                <img src="foto.png"
+                     alt="Foto Profil Amelia"
+                     class="profile-photo">
 
-            <br><br>
+                <div class="profile-intro">
+                    <p class="small-title">HELLO, I'M</p>
+                    <h3>Amelia Agustin Hidayat</h3>
+                    <p>🎓 Mahasiswa Program Studi Informatika</p>
+                </div>
+            </div>
 
-            <table border="1">
-
-                <tr>
-                    <td><b>Nama</b></td>
-                    <td>Amelia Agustin Hidayat</td>
-                </tr>
-
-                <tr>
-                    <td><b>NIM</b></td>
-                    <td>4112755201250146</td>
-                </tr>
-
-                <tr>
-                    <td><b>Program Studi</b></td>
-                    <td>Informatika</td>
-                </tr>
-
-                <tr>
-                    <td><b>Fakultas</b></td>
-                    <td>Fakultas Ilmu Komputer</td>
-                </tr>
-
-                <tr>
-                    <td><b>Email</b></td>
-                    <td>agustinamelia768@gmail.com</td>
-                </tr>
-
-                <tr>
-                    <td><b>Tempat Lahir</b></td>
-                    <td>SUMEDANG</td>
-                </tr>
-
-                <tr>
-                    <td><b>Tanggal Lahir</b></td>
-                    <td>19 AGUSTUS 2006</td>
-                </tr>
-
-            </table>
+            <div class="table-wrapper">
+                <table>
+                    <tr>
+                        <td><b>Nama</b></td>
+                        <td>Amelia Agustin Hidayat</td>
+                    </tr>
+                    <tr>
+                        <td><b>NIM</b></td>
+                        <td>4112755201250146</td>
+                    </tr>
+                    <tr>
+                        <td><b>Program Studi</b></td>
+                        <td>Informatika</td>
+                    </tr>
+                    <tr>
+                        <td><b>Fakultas</b></td>
+                        <td>Fakultas Ilmu Komputer</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>agustinamelia768@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Tempat Lahir</b></td>
+                        <td>SUMEDANG</td>
+                    </tr>
+                    <tr>
+                        <td><b>Tanggal Lahir</b></td>
+                        <td>19 AGUSTUS 2006</td>
+                    </tr>
+                </table>
+            </div>
         </section>
 
-        <hr>
-
         <!-- TENTANG SAYA -->
-        <section id="tentang">
-            <h2>Tentang Saya</h2>
+        <section id="tentang" class="card">
+            <h2>🐚 Tentang Saya</h2>
 
             <p>
-                Halo, nama saya Amelia Agustin Hidayat. Saya merupakan mahasiswa
-                Program Studi Informatika. Saya tertarik mempelajari
-                teknologi, pemrograman, pengembangan aplikasi,
-                dan Web Development.
+                Halo, nama saya Amelia Agustin Hidayat.
+                Saya merupakan mahasiswa Program Studi
+                Informatika. Saya tertarik mempelajari
+                teknologi, pemrograman, pengembangan
+                aplikasi, dan Web Development.
             </p>
 
             <p>
@@ -100,82 +117,68 @@
             </p>
         </section>
 
-        <hr>
-
         <!-- PENDIDIKAN -->
-        <section id="pendidikan">
-            <h2>Riwayat Pendidikan</h2>
+        <section id="pendidikan" class="card">
+            <h2>🎓 Riwayat Pendidikan</h2>
 
             <ol>
                 <li>SD Negeri Ranggon</li>
                 <li>SMP Negeri 5 Cikarang Selatan</li>
                 <li>SMA Negeri 2 Cikarang Selatan</li>
-                <li>S1 Informatika - Horizon University Indonesia </li>
+                <li>S1 Informatika - Horizon University Indonesia</li>
             </ol>
-
         </section>
-
-        <hr>
 
         <!-- HOBI -->
-        <section id="hobi">
-            <h2>Hobi</h2>
+        <section id="hobi" class="card">
+            <h2>🐠 Hobi</h2>
 
-            <ul>
-                <li>Badminton</li>
-                <li>Mendengarkan Musik</li>
-                <li>Membaca</li>
-                <li>Traveling</li>
+            <ul class="tag-list">
+                <li>🏸 Badminton</li>
+                <li>🎧 Mendengarkan Musik</li>
+                <li>📖 Membaca</li>
+                <li>✈️ Traveling</li>
             </ul>
-
         </section>
-
-        <hr>
 
         <!-- SKILL -->
-        <section id="skill">
-            <h2>Skill</h2>
+        <section id="skill" class="card">
+            <h2>🐢 Skill</h2>
 
-            <ul>
-                <li>HTML</li>
-                <li>Python</li>
-                <li>Microsoft Office</li>
-                <li>UI/UX Design</li>
-                <li>Public Speaking</li>
+            <ul class="tag-list">
+                <li>💻 HTML</li>
+                <li>🐍 Python</li>
+                <li>📊 Microsoft Office</li>
+                <li>🎨 UI/UX Design</li>
+                <li>🎤 Public Speaking</li>
             </ul>
-
         </section>
 
-        <hr>
-
         <!-- SOCIAL MEDIA -->
-        <section id="sosial-media">
-            <h2>Social Media</h2>
+        <section id="sosial-media" class="card">
+            <h2>🪼 Social Media</h2>
 
-            <p>
-                Instagram:
-                <a href="https://www.instagram.com/amelcloud9?stkn=MTdqcHByZG95dnJobQ==" target="_blank">
-                    Instagram Saya
+            <div class="social-links">
+                <a href="https://www.instagram.com/amelcloud9"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    📸 Instagram Saya
                 </a>
-            </p>
 
-            <p>
-                GitHub:
-                <a href="https://ameliahidayatfict-design.github.io/biodata-html.2/" target="_blank">
-                    GitHub Saya
+                <a href="https://ameliahidayatfict-design.github.io/biodatapw/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    💻 GitHub Saya
                 </a>
-            </p>
-
+            </div>
         </section>
 
     </main>
 
-    <hr>
-
     <!-- FOOTER -->
     <footer>
-        <p>Copyright &copy; 2026 - Amelia Agustin Hidayat</p>
-        <p>Web Programming 1</p>
+        <p>🌊 Copyright &copy; 2026 - Amelia Agustin Hidayat</p>
+        <p>Web Programming 1 🐬</p>
     </footer>
 
 </body>
